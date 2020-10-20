@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:orientation="vertical"
+              android:paddingTop="10dp">
+
+              <ImageView
+                  android:id="@+id/bus_image"
+                  android:layout_width="match_parent"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_height="150dp" />
+
+              <TextView
+                  android:id="@+id/bus_model"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="center"
+                  android:textColor="#000"
+                  android:textSize="15sp"
+                  android:text="@string/sample_text"/>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:padding="10dp"
+                  >
+
+                  <TextView
+                      android:id="@+id/bus_nomer"
+                      android:layout_width="50dp"
+                      android:layout_height="wrap_content"
+                      android:text="@string/sample_num"
+                      android:textAlignment="textStart" />
+
+                  <TextView
+                      android:id="@+id/bus_place_num"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textAlignment="textEnd"
+                      android:text="@string/sample_place_num"/>
+              </LinearLayout>
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:padding="10dp"
+              android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/from_to_city"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="center"
+                  android:textSize="15sp"
+                  android:text="@string/sample_num"/>
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="center"
+                  android:textColor="#000"
+                  android:textSize="15sp"
+                  android:layout_marginTop="10dp"
+                  android:text="@string/label_dep"/>
+              <TextView
+                  android:id="@+id/departure_date"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="textStart"
+                  android:layout_marginTop="10dp"
+                  android:text="@string/date_sample"/>
+              <TextView
+                  android:id="@+id/departure_time"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="textStart"
+                  android:layout_marginTop="10dp"
+                  android:text="@string/time_sample"/>
+
+              <TextView
+                  android:textColor="#000"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="center"
+                  android:textSize="15sp"
+                  android:layout_marginTop="10dp"
+                  android:text="@string/arrival_sample"/>
+
+              <TextView
+                  android:id="@+id/arrival_date"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="textStart"
+                  android:layout_marginTop="10dp"
+                  android:text="@string/date_sample"/>
+              <TextView
+                  android:id="@+id/arrival_time"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textAlignment="textStart"
+                  android:layout_marginTop="10dp"
+                  android:text="@string/time_sample"/>
+
+          </LinearLayout>
+
+      </LinearLayout>
+  </LinearLayout>
+
+</androidx.cardview.widget.CardView>
